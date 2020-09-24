@@ -1,6 +1,6 @@
 <!DOCTYPE iskola
 [
-<!ELEMENT iskola (tanar, tantargy)>
+<!ELEMENT iskola (#PCDATA)>
 
 <!ELEMENT tanar (nev, szak)>
 <!ATTLIST tanar kod ID #REQUIRED>
