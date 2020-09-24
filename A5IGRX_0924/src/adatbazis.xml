@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE adatbazis
+[
+  <!ELEMENT adatbazis (dolgozo)>
+
+  <!ELEMENT dolgozo (nev, fizetes)>
+  <!ATTLIST dolgozo kod ID #REQUIRED>
+  <!ELEMENT nev (#PCDATA)>
+  <!ELEMENT fizetes (#PCDATA)>
+]>
+
+<adatbazis>
+  <dolgozo kod="D1">
+    <nev>Szalai Máté</nev>
+    <fizetes>300000</fizetes>
+  </dolgozo>
+  
+  <dolgozo kod="D2">
+    <nev>Szalai László</nev>
+    <fizetes>900000</fizetes>
+  </dolgozo>
+  
+  <dolgozo kod="D3">
+    <nev>Kiss Levente</nev>
+    <fizetes>100000</fizetes>
+  </dolgozo>
+</adatbazis>
