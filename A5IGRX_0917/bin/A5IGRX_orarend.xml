@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+
+<!-- HÉTFŐ -->
+	<ora id="1" tipus="elmélet">
+		
+		<targy>Valószínűség számítás és Statisztika</targy>
+		
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>8:00</tol>
+			<ig>10:00</ig>
+		</idopont>
+		
+		<helyszin>II. Előadó</helyszin>
+		
+		<oktato>Dr. Fegyverneki Sándor</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+	
+
+	
+	<ora id="2" tipus="elmélet">
+		
+		<targy>Mesterséges intelligencia</targy>
+		
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>12:00</tol>
+			<ig>15:00</ig>
+		</idopont>
+		
+		<helyszin>A1/315</helyszin>
+		
+		<oktato>Dr. Dudás László</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+	
+	<ora id="3" tipus="elmélet">
+		
+		<targy>Webtechnológiák</targy>
+		
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>15:00</tol>
+			<ig>17:00</ig>
+		</idopont>
+		
+		<helyszin>info 102</helyszin>
+		
+		<oktato>Agárdi Anita</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+	
+	<ora id="4" tipus="gyakorlat">
+		
+		<targy>Webtechnolódiák</targy>
+		
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>17:00</tol>
+			<ig>19:00</ig>
+		</idopont>
+		
+		<helyszin>info 15</helyszin>
+		
+		<oktato>Sátán Ádám</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+	
+	
+	
+<!-- KEDD -->
+	<ora id="5" tipus="elmélet">
+		
+		<targy>Web Java</targy>
+		
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>10:00</tol>
+			<ig>12:00</ig>
+		</idopont>
+		
+		<helyszin>103</helyszin>
+		
+		<oktato>Bednarik László</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+	
+	<ora id="6" tipus="Elmélet">
+		
+		<targy>XML</targy>
+		
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>12:00</tol>
+			<ig>14:00</ig>
+		</idopont>
+		
+		<helyszin>37.előadó</helyszin>
+		
+		<oktato>Bednarik László</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+	
+	<ora id="7" tipus="gyakorlat">
+		
+		<targy>UNIX</targy>
+		
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>14:00</tol>
+			<ig>16:00</ig>
+		</idopont>
+		
+		<helyszin>info 102</helyszin>
+		
+		<oktato>Dr. Krizsán Zoltán</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+	<ora id="8" tipus="gyakorlat">
+	
+	<targy>Mesterséges Intelligencia</targy>
+	<idopont>
+	<nap>Kedd</nap>
+	<tol>18:00</tol>
+	<ig>19:00</ig>
+	</idopont>
+	<helyszin>Informatika 15</helyszin>
+	<oktato>Dr. Dudás László</oktato>
+	<szak>mérnök informatikus</szak>
+	</ora>	
+	
+		
+	
+<!-- SZERDA -->
+	<ora id="9" tipus="elmélet">
+		
+		<targy>Vállalati információs rendszerek</targy>
+		
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>12:00</tol>
+			<ig>14:00</ig>
+		</idopont>
+		
+		<helyszin>A1 319.</helyszin>
+		
+		<oktato>Dadvadopour Samad</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+	
+	<ora id="10" tipus="gyakorlat">
+		
+		<targy>Vállalati információs rendszerek</targy>
+		
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>14:00</tol>
+			<ig>16:00</ig>
+		</idopont>
+		
+		<helyszin>info 15</helyszin>
+		
+		<oktato>Bikfalvi Péter</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+<!-- Csütörtök -->
+<ora id="11" tipus="gyakorlat">
+		
+		<targy>Web Java</targy>
+		
+		<idopont>
+			<nap>Csütörtök</nap>
+			<tol>10:00</tol>
+			<ig>12:00</ig>
+		</idopont>
+		
+		<helyszin>info 202</helyszin>
+		
+		<oktato>Dr.Bednarik László</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>
+<ora id="12" tipus="gyakorlat">
+		
+		<targy>XML</targy>
+		
+		<idopont>
+			<nap>Csütörtök</nap>
+			<tol>12:00</tol>
+			<ig>14:00</ig>
+		</idopont>
+		
+		<helyszin>info 103</helyszin>
+		
+		<oktato>Dr.Bednarik László</oktato>
+		
+		<szak>mérnök informatikus</szak>
+	</ora>	
+	
+	
+</orarend>

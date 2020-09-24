@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mozi>
+	<film id="txn_nxm_2jb" mufaj="horror"/>
+		<rendezezo id="nzk_4xm-2jb" nev="alex"/>
+		<szinesz id="u5q_4xm_2jb" nev="Madison_Ivy"/>
+		<iro id="trv_4xm_2jb"/>
+		<producer id="tre_4xm_2jb" nev="Kiss Sandor"/>
+		<dramaturg id="oiu_4xm_2jb" nev ="Zelenak Attila"/>
+		<operator id="mnb_4xm_2jb" nev="Tomai Hanna"/>
+	</film>
+</mozi>

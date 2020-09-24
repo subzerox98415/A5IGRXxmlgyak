@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia id="konf">
+	<cim id="cim" nev="Cím"/>
+	<hallgatok id="hallgatok" nev="hallgato">
+		<hallgato id="hallgato" nev="hallgato">
+			<nev id="nev" nev="Hallgató Neve"/>
+			<lakcim id="lakcim" nev="Hallgató Lakcíme"/>
+		</hallgato>
+	</hallgatok>
+	<helyszin id="helyszin"/>
+	<eloado id="eloado">
+	<nev id="nev" nev="eloado Neve"/>
+	<adoszam id="adoszam" nev="Adószám"/>
+	<lakcim id="lakcim" nev="Előadó Lakcíme"/>
+	</eloado>
+	<datum id="datum"/>
+
+</konferencia>
