@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com A5IGRX_nevjegykartya.xsd">
+    <nevjegykartya id="1">
+        <nev>Szentesi Mate</nev>
+        <ceg>
+            <cim>
+                <iranyitoszam>1111</iranyitoszam>
+                <varos>BP</varos>
+                <utca>Kiss Köz</utca>
+                <hazszam>6969</hazszam>
+            </cim>
+            <nev>Szentesi M.Kft</nev>
+            <telefonszam korzet="1111">1234567</telefonszam>
+            <weblap>https://SzM.hu</weblap>
+        </ceg>
+        <beosztas>Nehézgép kezelő</beosztas>
+        <telefonszam korzet="1000">987456</telefonszam>
+        <email>Szm@szmkft.hu</email>
+    </nevjegykartya>
+
+    <nevjegykartya id="2">
+        <nev>Gipsz Jakab</nev>
+        <ceg>
+            <cim>
+                <iranyitoszam>2222</iranyitoszam>
+                <varos>Lyukóbánya</varos>
+                <utca>Neviddel</utca>
+                <hazszam>1</hazszam>
+            </cim>
+            <nev>Felvasarlunk BT.</nev>
+            <telefonszam korzet="2212">852963</telefonszam>
+            <weblap>https://Felvasarlunk.hu</weblap>
+        </ceg>
+        <beosztas>Színesfém orientált beszerző szakmunkás</beosztas>
+        <telefonszam korzet="2213">123456</telefonszam>
+        <email>Lyukoiszakmunkak@felvasarlunk.hu</email>
+    </nevjegykartya>
+</nevjegykartyak>

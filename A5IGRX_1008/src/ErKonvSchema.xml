@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ErKonvSchema xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com A5IGRX_ErKonVSchema.xsd">
+<object>
+<name>A</name>
+<attribution>
+<attributionname>a</attributionname>
+<attributionname>b</attributionname>
+<attributionname>c</attributionname>
+</attribution>
+</object>
+<object>
+<name>B</name>
+<attribution>
+<attributionname>a</attributionname>
+<attributionname>b
+<attribution>
+<attributionname>x</attributionname>
+<attributionname>y</attributionname>
+</attribution>
+</attributionname>
+
+</object>
+<object>
+<name>C</name>
+<attribution>
+<attributionname>a</attributionname>
+<attributionname>b</attributionname>
+</attribution>
+</object>
+</ErKonvSchema>
