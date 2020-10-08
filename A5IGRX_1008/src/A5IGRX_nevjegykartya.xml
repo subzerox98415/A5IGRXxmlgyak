@@ -18,7 +18,6 @@
         <telefonszam korzet="1000">987456</telefonszam>
         <email>Szm@szmkft.hu</email>
     </nevjegykartya>
-
     <nevjegykartya id="2">
         <nev>Gipsz Jakab</nev>
         <ceg>
