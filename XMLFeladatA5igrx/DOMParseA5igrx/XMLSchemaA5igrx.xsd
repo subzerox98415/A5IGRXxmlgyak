@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+<xs:element name="designok" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Design_id">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="design_név">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Kép_URL">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Készítő_neve">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Használatok_száma">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Verzioszám">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="designok_PrimaryKey_1">
+			<xs:selector xpath="."/>
+			<xs:field xpath="Design_id"/>
+		</xs:key>
+		<xs:keyref name="kész_blokk_design_ForeignKey_1" refer="designok_PrimaryKey_1">
+			<xs:selector xpath="kész_blokk_design"/>
+			<xs:field xpath="Design_id"/>
+		</xs:keyref>
+	</xs:element>
+<xs:element name="honlap_motor" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Verzioszám">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Komponens_verziószám">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="honlap_motor_PrimaryKey_1">
+			<xs:selector xpath="."/>
+			<xs:field xpath="Verzioszám"/>
+		</xs:key>
+		<xs:keyref name="designok_ForeignKey_1" refer="honlap_motor_PrimaryKey_1">
+			<xs:selector xpath="designok"/>
+			<xs:field xpath="Verzioszám"/>
+		</xs:keyref>
+		<xs:keyref name="relationship_ForeignKey_1" refer="honlap_motor_PrimaryKey_1">
+			<xs:selector xpath="relationship"/>
+			<xs:field xpath="Verzioszám"/>
+		</xs:keyref>
+	</xs:element>
+<xs:element name="kész_blokk_design" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="KBlokkid">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Blokk_név">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Melyik_design_rész_blokkja" nillable="true" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Cél_url">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Design_id" nillable="true" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="kész_blokk_design_PrimaryKey_1">
+			<xs:selector xpath="."/>
+			<xs:field xpath="KBlokkid"/>
+		</xs:key>
+		<xs:keyref name="kész_blokk_design_emailcím_ForeignKey_1" refer="kész_blokk_design_PrimaryKey_1">
+			<xs:selector xpath="kész_blokk_design_emailcím"/>
+			<xs:field xpath="KBlokkid"/>
+		</xs:keyref>
+	</xs:element>
+<xs:element name="kész_blokk_design_emailcím" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="emailcím">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="11"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="KBlokkid">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="kész_blokk_design_emailcím_PrimaryKey_1">
+			<xs:selector xpath="."/>
+			<xs:field xpath="emailcím"/>
+			<xs:field xpath="KBlokkid"/>
+		</xs:key>
+	</xs:element>
+<xs:element name="relationship" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Validált" nillable="true" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Verzioszám">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Widget_ID">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="relationship_PrimaryKey_1">
+			<xs:selector xpath="."/>
+			<xs:field xpath="Verzioszám"/>
+			<xs:field xpath="Widget_ID"/>
+		</xs:key>
+	</xs:element>
+<xs:element name="widgetek" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Widget_ID">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Widget_neve">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Használatok_száma">
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="-2147483648"/>
+							<xs:maxInclusive value="2147483647"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Widget_beállítások">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				
+			</xs:sequence>
+		</xs:complexType>
+		<xs:key name="widgetek_PrimaryKey_1">
+			<xs:selector xpath="."/>
+			<xs:field xpath="Widget_ID"/>
+		</xs:key>
+		<xs:keyref name="relationship_ForeignKey_2" refer="widgetek_PrimaryKey_1">
+			<xs:selector xpath="relationship"/>
+			<xs:field xpath="Widget_ID"/>
+		</xs:keyref>
+	</xs:element>
+	</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
